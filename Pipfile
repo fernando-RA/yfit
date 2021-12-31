@@ -56,14 +56,9 @@ python-benedict = "*"
 numpy = "==1.19.5"
 traitlets = "==4.3.3"
 django-celery-beat = "*"
-<<<<<<< HEAD
-faker = "*"
-django-pnm = "*"
-=======
 # "django-push-notifications[WP,APNS]" = "~=2.0.0"
 # faker = "*"
 # django-push-notifications = {git = "https://github.com/jazzband/django-push-notifications.git"}
->>>>>>> afb5bb50dfae329252fec6844328009b52346f9b
 
 [pipenv]
 allow_prereleases = true
