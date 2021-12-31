@@ -1,0 +1,12 @@
+*.pyc
+env/
+.terraform
+.env
+staticfiles/
+postgres-data/
+
+# python virtual environment
+venv/
+
+# python cache
+__pycache__
