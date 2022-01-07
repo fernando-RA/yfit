@@ -1,0 +1,8 @@
+opt_in_rules:
+  - prefer_nimble
+
+disabled_rules:
+  - force_cast
+  - force_try
+  - function_body_length
+  - file_length

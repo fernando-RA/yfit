@@ -1,0 +1,22 @@
+{% extends "./base_email.html" %}
+
+{% block content %}
+<div class="content" style="margin-bottom: 40px;" >
+    <p style="font-size: 20px">The following class has been canceled: </p>
+    <p id="class_name" style="font-size: 30px; color: #5FE487; line-height: 2rem; margin-top: 15px;">{{name}}<br>w/ {{trainer_name}}</p>
+    <p id="time" style="font-size: 20px; line-height: 2rem; margin-top: 15px;">{{time}}</p>
+    {% if location %}
+    <p id="place" style="font-size: 20px; line-height: 2rem; margin-top: 15px;">{{location}}</p>
+    {% else %}
+    <p id="place" style="font-size: 20px; line-height: 2rem; margin-top: 15px;">Virtual Class</p>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block cancel_notice %}
+    <h2 align="left" style="margin: 40px 0 30px; font-size: 20px">Canceled</h2>
+    <hr>
+    <p align="left" style="color: #828282;">This class has been canceled.</p>
+    <p align="left" style="color: #828282;">Any payments have been canceled and refunded.</p>
+    <br>
+{% endblock %}
