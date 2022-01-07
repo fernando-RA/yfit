@@ -1,0 +1,120 @@
+import {StyleSheet} from 'react-native';
+
+import {scaleVertical, scale} from '../../../../utils/scale';
+
+export const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    flexDirection: 'column',
+    paddingHorizontal: 20,
+    width: '100%',
+    alignItems: 'center',
+  },
+  signInContainer: {
+    backgroundColor: 'transparent',
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 20,
+    width: '100%',
+    alignItems: 'center',
+    fontFamily: 'Inter',
+  },
+  heading: {
+    color: '#5FE487',
+    fontSize: 42,
+    paddingTop: scaleVertical(50),
+    marginTop: scaleVertical(15),
+    width: '100%',
+    textAlign: 'center',
+  },
+  subHead: {
+    color: '#0A1F31',
+    fontSize: 26,
+    paddingTop: scaleVertical(30),
+    paddingBottom: scaleVertical(10),
+    width: '100%',
+    textAlign: 'center',
+    lineHeight: 30,
+  },
+  termText: {
+    textAlign: 'center',
+    color: '#fff',
+    width: '100%',
+    marginVertical: scaleVertical(25),
+    marginBottom: scaleVertical(50),
+    fontSize: 16,
+    textDecorationLine: 'underline',
+  },
+  earlyAccess: {
+    textAlign: 'center',
+    color: '#fff',
+    width: '100%',
+    marginVertical: scaleVertical(25),
+    fontSize: 16,
+  },
+  textRow: {
+    textAlign: 'center',
+    color: 'black',
+    fontSize: 24,
+    padding: 15,
+  },
+  loginButton: {
+    width: 192,
+    height: 48,
+    alignSelf: 'center',
+  },
+
+  image: {
+    resizeMode: 'cover',
+    marginBottom: scale(10),
+    position: 'absolute',
+    top: 0,
+  },
+  //
+  logo: {
+    marginVertical: scaleVertical(18),
+  },
+  logoTitle: {
+    fontSize: 40,
+    fontWeight: '700',
+    color: '#fff',
+    lineHeight: 40,
+    textAlign: 'center',
+    paddingHorizontal: 25,
+    marginTop: 46,
+  },
+  logoText: {
+    marginVertical: scaleVertical(20),
+    paddingHorizontal: scale(35),
+    fontSize: 20,
+    fontFamily: 'Inter',
+    fontStyle: 'normal',
+    textAlign: 'center',
+    fontWeight: '300',
+    color: '#fff',
+    lineHeight: 24,
+  },
+  buttonContainer: {
+    borderRadius: 25,
+    alignItems: 'center',
+    borderColor: '#fff',
+    borderWidth: 1,
+    justifyContent: 'center',
+    backgroundColor: 'transparent',
+    height: 50,
+    width: 276,
+    marginBottom: scaleVertical(2),
+    color: '#fff',
+    marginTop: 20,
+  },
+  buttonBody: {
+    flexDirection: 'row',
+  },
+  buttonText: {
+    fontSize: 16,
+    color: '#fff',
+    marginLeft: 8,
+    fontStyle: 'normal',
+    fontWeight: '600',
+  },
+});

@@ -1,0 +1,1 @@
+export const STORE_WORKOUT_TYPES = 'CommonData/STORE_WORKOUT_TYPES';

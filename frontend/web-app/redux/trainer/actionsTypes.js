@@ -1,0 +1,7 @@
+export const GET_TRAINER_REQUEST = "Trainer/GET_TRAINER_REQUEST";
+export const GET_TRAINER_ERROR = "Trainer/GET_TRAINER_ERROR";
+export const GET_TRAINER_SUCCESS = "Trainer/GET_TRAINER_SUCCESS";
+export const SET_TRAINER_FETCHING = "Trainer/SET_TRAINER_FETCHING";
+export const SET_TRAINER_LINK = "Trainer/SET_TRAINER_LINK";
+
+export const SET_TRAINER_CLASSES = "Trainer/SET_TRAINER_CLASSES";

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1103512498",
+    "firebase_url": "https://undercard-app.firebaseio.com",
+    "project_id": "undercard-app",
+    "storage_bucket": "undercard-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1103512498:android:a6481c574f191a702d9aab",
+        "android_client_info": {
+          "package_name": "com.undercard_18898"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1103512498-o2abp08al82aoped95nk61mklkkr3utl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.undercard_18898",
+            "certificate_hash": "35af916203c3f8dbf176ab1d5387bdfa4a55b267"
+          }
+        },
+        {
+          "client_id": "1103512498-n74kqqikevti0vqi3nfg96vglme26opt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.undercard_18898",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1103512498-prb9k0a892e5vctfradhvjud3i5pg2u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqj_-az3F2tBO3BgfRomKSrCcjdu2Db6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1103512498-prb9k0a892e5vctfradhvjud3i5pg2u0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1103512498-0ko51e79thod4lceiiqdicr1leij28rr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cb.undercard-18898"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

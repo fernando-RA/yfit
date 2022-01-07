@@ -1,0 +1,79 @@
+/* Taken from https://github.com/stripe/elements-examples/blob/master/css/example2.css */
+/* TODO Clean up unnecessary styles */
+/* TODO Convert all to Tailwinds */
+
+.container {
+    @apply relative w-full h-12;
+}
+
+.base {
+    @apply px-3 py-2 text-black relative bg-transparent rounded border border-gray-400 hover:border-gray-700 outline-none w-full h-full z-20;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.focused {
+    @apply border-gray-700 outline-none;
+}
+
+.label {
+    @apply pl-3 bottom-3 absolute w-full text-gray-400;
+    left: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transform-origin: 0 50%;
+    cursor: text;
+    pointer-events: none;
+    transition-property: color, transform;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.base::-webkit-input-placeholder,
+.base::-moz-placeholder,
+.base:-ms-input-placeholder {
+    color: transparent;
+    transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.base.focused,
+.base:not(.empty) {
+    opacity: 1;
+    @apply pt-5;
+}
+
+.base.focused::-webkit-input-placeholder,
+.base:not(.empty)::-webkit-input-placeholder,
+.base.focused::-moz-placeholder,
+.base:not(.empty)::-moz-placeholder,
+.base.focused:-ms-input-placeholder,
+.base:not(.empty):-ms-input-placeholder {
+    @apply text-gray-400;
+}
+
+.base.focused + .label,
+.base:not(.empty) + .label {
+    @apply text-gray-400 text-xs;
+    transform: translateY(-16px);
+    cursor: default;
+}
+
+.base.invalid {
+    @apply border-red-600;
+}
+
+.base.invalid + .label {
+    @apply text-red-600;
+}
+
+.base:-webkit-autofill,
+.base:-webkit-autofill:hover,
+.base:-webkit-autofill:focus {
+    @apply border border-gray-400;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    z-index: 0;
+}

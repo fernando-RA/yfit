@@ -1,0 +1,14 @@
+.select {
+    @apply relative;
+}
+
+.select::after {
+    @apply top-1/2 absolute;
+    content: "";
+    width: 13px;
+    height: 6px;
+    right: 30px;
+    margin-top: -2px;
+    background-image: url("/static/img/down_arrow.svg");
+    pointer-events: none;
+}
