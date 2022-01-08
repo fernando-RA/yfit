@@ -61,7 +61,7 @@ struct DurationPicker: View {
     }
     private var durationRow: some View {
         HStack(alignment: .center) {
-            Text("Duration")
+            Text("Duração")
                 .foregroundColor(.primary)
             Spacer()
             Text(duration.formatted)

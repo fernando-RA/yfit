@@ -17,7 +17,7 @@ struct OtherReservableClassesFromTrainer: View {
         ZStack {
             VStack {
                 HStack {
-                    Text("Upcoming classes from \(viewModel.user.fullName)")
+                    Text("Próximas aulas de \(viewModel.user.fullName)")
                         .font(.system(size: 14, weight: .bold, design: .rounded))
                     Spacer()
                 }.padding(.horizontal)

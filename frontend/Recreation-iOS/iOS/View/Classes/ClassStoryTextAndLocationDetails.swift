@@ -42,7 +42,7 @@ struct ClassStoryTextAndLocationDetails: View {
             ScrollView {
                 VStack(spacing: 30) {
                     VStack(alignment: .leading) {
-                        Text("Class Type")
+                        Text("Tipo de Aula")
                             .font(.callout)
                         switch trainerClass.tags.count {
                         case 0:
@@ -62,8 +62,8 @@ struct ClassStoryTextAndLocationDetails: View {
                     VStack(alignment: .leading) {
                         Text(trainerClass.details)
                             .fixedSize(horizontal: false, vertical: true)
-                        StoryDetailsLabel(title: "What you need", details: trainerClass.equipment ?? "")
-                        Text("Location")
+                        StoryDetailsLabel(title: "Você vai precisar", details: trainerClass.equipment ?? "")
+                        Text("Localização")
                             .font(.callout)
                             .fontWeight(.bold)
                         if let location = trainerClass.location {
@@ -75,14 +75,14 @@ struct ClassStoryTextAndLocationDetails: View {
                                 .fontWeight(.bold)
                                 .padding(.bottom)
                             Text(trainerClass.locationNotes ?? "")
-                            StoryDetailsLabel(title: "Cancellation Policy", details: "Speak with your trainer before class")
-                            StoryDetailsLabel(title: "Health and Safety",
+                            StoryDetailsLabel(title: "Política de Cancelamento", details: "Fale com o treinador antes da aula")
+                            StoryDetailsLabel(title: "Saúde e segurança",
                                               details: trainerClass.safetyProtocol ?? "")
                         }
                         .fixedSize(horizontal: false, vertical: true)
                     }
                     HStack {
-                        Text("Upcoming classes from \(trainerClass.author.fullName)")
+                        Text("Próximas aulas de \(trainerClass.author.fullName)")
                         .font(.headline)
                         .bold()
                         Spacer()

@@ -5,7 +5,7 @@ struct PricePicker: View {
 
     var body: some View {
         HStack {
-            Text("Price per attendee")
+            Text("Preço por visitante")
             Spacer()
             MoneyTextField(money: $price)
         }

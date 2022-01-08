@@ -5,20 +5,20 @@ struct OnboardingLabels: View {
         VStack(alignment: .center) {
             Image(asset: .logo)
                 .padding()
-            Text("Find your next")
+            Text("Encontre sua próxima")
                 .font(.system(size: 36))
                 .fontWeight(.semibold)
                 .padding(-10)
 
-            Text("group class")
+            Text("aula em grupo")
                 .font(.system(size: 36))
                 .fontWeight(.semibold)
                 .padding(.top, -5)
                 .padding(.bottom, 3)
 
-            Text("Workout directly with trainers,")
+            Text("Treine diretamente com profissionais")
                 .font(.title2)
-            Text("no memberships required.")
+            Text("sem pagar mensalidade")
                     .font(.title2)
         }
         .multilineTextAlignment(.center)

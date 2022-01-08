@@ -15,7 +15,7 @@ struct AttendeePicker: View {
 
     private var limitSwitch: some View {
         HStack {
-            Text("Attendee limit")
+            Text("Limite de inscrições")
             Spacer()
             Toggle(isOn: $hasLimit) {
                 EmptyView()
@@ -25,14 +25,14 @@ struct AttendeePicker: View {
 
     private var attendeeLimit: some View {
         HStack {
-            Text("Number of attendees")
+            Text("Numero de inscrítos")
             Spacer()
             Text("\(count)").foregroundColor(.secondary)
         }
     }
 
     private var numberPicker: some View {
-        Picker("Number of attendees", selection: $count) {
+        Picker("numero de inscrítos", selection: $count) {
             ForEach(1..<200, id: \.self) {
                 Text("\($0)")
             }

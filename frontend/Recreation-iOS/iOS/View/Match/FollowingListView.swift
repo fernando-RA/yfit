@@ -11,7 +11,7 @@ struct FollowingListView: View {
     @Environment(\.matches) var matches
     var body: some View {
         ScrollView {
-            PullToRefresh(coordinateSpaceName: "following") {
+            PullToRefresh(coordinateSpaceName: "Seguindo") {
                 matches.fetchFollowing()
                 }
             VStack {
@@ -22,8 +22,8 @@ struct FollowingListView: View {
             .padding()
         }
 
-        .coordinateSpace(name: "following")
-        .navigationBarTitle("Following(\(matches.state.followed.count))", displayMode: .inline)
+        .coordinateSpace(name: "Seguindo")
+        .navigationBarTitle("Seguindo(\(matches.state.followed.count))", displayMode: .inline)
     }
 }
 

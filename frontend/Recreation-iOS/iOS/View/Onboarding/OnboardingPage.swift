@@ -122,7 +122,7 @@ struct OnboardingPage<Destination: View>: View {
     }
 
     private var skipButton: some View {
-        Button("Skip") {
+        Button("Pular") {
             viewModel.send(.close)
         }
     }

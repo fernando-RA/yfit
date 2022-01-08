@@ -29,7 +29,7 @@ struct OnboardingRouter<Destination: View>: View {
         VStack {
             OnboardingNamePage(
                 state: viewModel.state.nameForm,
-                actionName: "Register",
+                actionName: "Registrar",
                 onSave: { form in
                     viewModel.send(.updateUser(form))
                 }

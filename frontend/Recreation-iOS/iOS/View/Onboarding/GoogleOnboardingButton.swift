@@ -32,7 +32,7 @@ struct GoogleOnboardingButton: View {
                 HStack(alignment: .center, spacing: 8) {
                     Image(asset: .googleLogo)
 
-                    Text("Continue with Google")
+                    Text("Continuar com Google")
                         .font(.system(size: 19))
                         .foregroundColor(.white)
                 }

@@ -25,7 +25,7 @@ struct ClassPhotoPicker: View {
     }
 
     private var button: some View {
-        return Button( hasImgUrl || hasStagedImage ? "Edit" : "Add featured photo") {
+        return Button( hasImgUrl || hasStagedImage ? "Editar" : "Adicionar foto em destaque") {
             showSheet = true
         }
     }
@@ -36,13 +36,13 @@ struct ClassPhotoPicker: View {
 
     private var actionSheet: ActionSheet {
         ActionSheet(
-            title: Text("Select the class featured photo"),
+            title: Text("Selecione a foto em destaque da turma"),
             message: nil,
             buttons: [
                 .default(Text("Camera")) {
                     selectedSource = .camera
                 },
-                .default(Text("Photo Library")) {
+                .default(Text("Biblioteca de fotos")) {
                     selectedSource = .photoLibrary
                 },
                 .cancel()
@@ -52,16 +52,16 @@ struct ClassPhotoPicker: View {
 
     var EditSheet: ActionSheet {
         ActionSheet(
-            title: Text("Select the class featured photo"),
+            title: Text("Selecione a foto em destaque da turma"),
             message: nil,
             buttons: [
                 .default(Text("Camera")) {
                     selectedSource = .camera
                 },
-                .default(Text("Photo Library")) {
+                .default(Text("Biblioteca de fotos")) {
                     selectedSource = .photoLibrary
                 },
-                .default(Text("Crop")) {
+                .default(Text("Recortar")) {
                     self.showCropingView.toggle()
                 },
                 .cancel()

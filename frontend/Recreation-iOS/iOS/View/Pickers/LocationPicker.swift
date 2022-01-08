@@ -65,14 +65,14 @@ struct LocationPicker: View {
                                 createOrUpdateLocation()
                                 presentationMode.wrappedValue.dismiss()
                             }, label: {
-                                Text("Confirm")
+                                Text("Confirmar")
                                     .bold()
                             })
                                 .buttonStyle(RecGreenButtonStyle())
                                 .padding()
                         }
                     } else {
-                        Text("Tap the search icon to enter a location")
+                        Text("Clique no icone de busca para pesquisar uma localidade")
                     }
                 }
             }
@@ -113,17 +113,17 @@ struct LocationPicker: View {
                             showSheet.toggle()
                             presentationMode.wrappedValue.dismiss()
                         } label: {
-                            Text("Cancel")
+                            Text("Cancelar")
                         }
                         Spacer()
                     }
-                    Text("Add a location")
+                    Text("Adicionar uma localização")
                         .font(.title3)
                 }
                 VStack {
                     HStack {
                         Image(systemName: "magnifyingglass")
-                        TextField("search", text: $gps.state.searchedLocal)
+                        TextField("Buscar", text: $gps.state.searchedLocal)
                     }
                     .background(Color(.secondarySystemBackground))
                     .padding(5)
