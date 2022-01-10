@@ -14,7 +14,7 @@ struct FollowButton: View {
     let trainer: User
     let followingColor: Color
     var body: some View {
-        Button(isFollowing ? "Following" : "Follow", action: {
+        Button(isFollowing ? "Seguindo" : "Seguir", action: {
             if matches.state.following.contains(where: { match in
                 match.user == trainer.id
             }) {

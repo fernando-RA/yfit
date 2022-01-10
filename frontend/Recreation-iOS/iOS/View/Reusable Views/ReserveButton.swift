@@ -5,14 +5,14 @@ struct ReserveButton: View {
     let action: () -> Void
 
     enum State: String {
-        case ableToReserve = "Reserve"
-        case soldOut = "Sold Out"
+        case ableToReserve = "Reservar"
+        case soldOut = "Esgotado"
 
         /*
          At some point this could become "See your reservation"
          when we implement that view for clients.
          */
-        case alreadyReserved = "Already Reserved"
+        case alreadyReserved = "Ja foi reservado"
 
         var name: String {
             rawValue

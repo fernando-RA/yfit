@@ -28,6 +28,7 @@ struct StoryDetailsLabel_Previews: PreviewProvider {
             title: "Where we will go",
             details: "to the moon, Idk this is just so I can see what it would look like."
                 + " if you see this add a joke"
+                + " life is the game where the only winning move is not playing"
         )
     }
 }

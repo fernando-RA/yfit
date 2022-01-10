@@ -5,7 +5,7 @@ struct OtherClassesView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text("MORE CLASSES FROM \(trainerClass.author.firstName)")
+            Text("MAIS AULAS DE \(trainerClass.author.firstName)")
                 .textCase(.uppercase)
                 .foregroundColor(Color(asset: Asset.Color.lightGray))
                 .font(.system(size: 12))
