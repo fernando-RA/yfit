@@ -19,7 +19,7 @@ struct ProfileFormAlert: View {
                 Spacer()
                 Divider()
                     .edgesIgnoringSafeArea(.horizontal)
-                Button("Done") {
+                Button("Completo") {
                     showAlert.toggle()
                 }
                 .font(.title2)
@@ -28,29 +28,29 @@ struct ProfileFormAlert: View {
             }
 
             VStack {
-                Text("Complete your profile to save")
+                Text("Complete seu perfil para salvar")
                     .font(.title3)
                     .bold()
                     .padding(.top)
                     .padding(.bottom, 5)
 
                 if viewModel.state.profilePictureURL == nil && viewModel.state.encodedProfilePicture == nil {
-                    Text("Profile image")
+                    Text("Imagem do perfil")
                 }
 
                 if viewModel.state.firstName == "" {
-                    Text("First name")
+                    Text("Primeiro nome")
                 }
 
                 if viewModel.state.lastName == "" {
-                    Text("Last name")
+                    Text("Ultimo nome")
                 }
 
                 if viewModel.state.bio == "" {
                     Text("Bio")
                 }
                 if !viewModel.state.stripePaymentsEnabled {
-                    Text("Stripe account")
+                    Text("Conta Stripe")
                 }
                 Spacer()
             }

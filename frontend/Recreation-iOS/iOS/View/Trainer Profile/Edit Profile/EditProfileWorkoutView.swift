@@ -11,7 +11,7 @@ struct EditProfileWorkoutView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Choose activity types")
+                Text("Escolha os tipos de atividade")
                     .font(.headline)
                 Spacer()
             }

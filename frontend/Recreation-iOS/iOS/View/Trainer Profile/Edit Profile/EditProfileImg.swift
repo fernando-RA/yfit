@@ -23,7 +23,7 @@ struct EditProfileImg: View {
                                 Rectangle()
                                     .frame(width: 92, height: 27, alignment: .center)
                                     .foregroundColor(Color(asset: .bannerGrey))
-                                Text("EDIT")
+                                Text("Editar")
                                     .foregroundColor(.white)
                                     .font(.custom("", size: 14))
                             }
@@ -45,7 +45,7 @@ struct EditProfileImg: View {
                                 Rectangle()
                                     .frame(width: 92, height: 27, alignment: .center)
                                     .foregroundColor(Color(asset: .bannerGrey))
-                                Text("EDIT")
+                                Text("Editar")
                                     .foregroundColor(.white)
                                     .font(.custom("", size: 14))
                             }
@@ -56,14 +56,14 @@ struct EditProfileImg: View {
                 }
             }
             .actionSheet(isPresented: $viewModel.state.showImgActionSheet) {
-                ActionSheet(title: Text("Add a picture to your Profile"),
+                ActionSheet(title: Text("Adicione uma foto de perfil"),
                             message: nil,
                             buttons: [.default(Text("Camera"), action: {
                                 showImgPicker.toggle()
                                 viewModel.state.sourceType = .camera
                                 print(viewModel.state.sourceType)
                             }),
-                            .default(Text("Photo Library"), action: {
+                            .default(Text("Biblioteca de fotos"), action: {
                 showImgPicker.toggle()
                                 viewModel.state.sourceType = .photoLibrary
                             }),

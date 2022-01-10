@@ -15,28 +15,28 @@ struct ConnectStripeView: View {
         ZStack {
             stripeNavLink
             VStack(alignment: .leading) {
-                Text("Stripe connects to your bank account so you can get paid.")
+                Text("Stripe se conecta a sua conta bancaria e permite que voce recba pagementos atraves dela.")
                     .font(.system(size: 20))
                     .fontWeight(.semibold)
                     .padding(.bottom, 16)
                     .padding(.top, 37)
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Tips to connect with Stripe:")
+                    Text("Dicas para conectar sua propria conta stripe:")
 
                     VStack(alignment: .leading) {
                         HStack(alignment: .top) {
                             Text("1.")
-                            Text("Solo trainers: enter") +
+                            Text("Personal trainers: insira") +
                                 Text(" “Individual”").bold() +
-                                Text(" for Type of business")
+                                Text(" para Tipo de conta.")
                         }
                         HStack(alignment: .top) {
                             Text("2.")
-                            Text("Enter a ") + Text("website or social account").bold() + Text(" for Business website. Eg, www.instagram.com/username ")
+                            Text("Enter a ") + Text("Site ou conta de midia social").bold() + Text(" para o site de negócios. Por exemplo, www.instagram.com/username")
                         }
                         HStack(alignment: .top) {
                             Text("3.")
-                            Text("Have your ") + Text("debit card ").bold() + Text("or ") + Text("account and routing numbers ").bold() + Text("ready.")
+                            Text("Tenha em maos seu") + Text("cartão de débito ").bold() + Text("ou ") + Text("dados da conta bancária").bold() + Text("prontos.")
                         }
                     }
                     .padding(.leading, 7)
@@ -55,11 +55,11 @@ struct ConnectStripeView: View {
                             ProgressView()
                                 .progressViewStyle(CircularProgressViewStyle(tint: Color.black))
                         } else if viewModel.state.stripePaymentsEnabled {
-                            Text("Stripe is connected")
+                            Text("Stripe está conectado")
                                 .fontWeight(.bold)
                                 .foregroundColor(.black)
                         } else {
-                            Text("Connect to Stripe")
+                            Text("Conectar ao Stripe")
                             .fontWeight(.bold)
                             .foregroundColor(.black)
                     }
@@ -71,7 +71,7 @@ struct ConnectStripeView: View {
             }
             .padding(.horizontal, 16)
 
-            .navigationTitle("Stripe account")
+            .navigationTitle("Conta stripe")
             .onAppear {
                 if viewModel.state.showProfile {
                     presentationMode.wrappedValue.dismiss()

@@ -27,8 +27,8 @@ struct UserMenu: View {
         })
 
         return Alert(
-            title: Text("Setup profile"),
-            message: Text("In order to create your first class you have to setup your profile"),
+            title: Text("Perfil de configuração"),
+            message: Text("Para criar sua primeira aula, você precisa configurar seu perfil"),
             primaryButton: .cancel(),
             secondaryButton: setupButton)
     }

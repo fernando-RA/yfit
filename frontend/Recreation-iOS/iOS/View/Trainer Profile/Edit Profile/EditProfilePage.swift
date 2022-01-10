@@ -31,7 +31,7 @@ struct EditProfilePage: View {
                 viewModel.send(.getStripeAccount)
             viewModel.state.showProfile = false
         }
-        .navigationBarTitle("Trainer Profile", displayMode: .inline)
+        .navigationBarTitle("Perfil do treinador", displayMode: .inline)
         .navigationBarItems(trailing: saveButton)
         .navigationBarBackButtonHidden(viewModel.state.isUpdatingUser)
         .alert($viewModel.state.error)

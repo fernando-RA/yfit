@@ -50,8 +50,8 @@ struct ContentView: View {
         }
         .alert(isPresented: $gps.state.invalidPermission) {
             Alert(
-                title: Text("Rec Location Sevices"),
-                message: Text("Please go to Settings and turn on Location services to continue using our app. We user you location to help find Classes in your area"),
+                title: Text("Serviços de localização'"),
+                message: Text("Vá para Configurações e ative os serviços de localização para continuar usando nosso aplicativo. Usamos sua localização para ajudar a encontrar aulas em sua área"),
                 primaryButton: .cancel(Text("Cancel")),
                 secondaryButton: .default(Text("Settings"), action: {
                     if let url = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(url) {

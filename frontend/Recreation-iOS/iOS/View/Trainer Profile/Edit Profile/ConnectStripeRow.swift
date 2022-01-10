@@ -37,9 +37,9 @@ struct ConnectStripeRow: View {
             )
             .disabled(state.isLoadingStripe)
             .alert(isPresented: $state.showDestructiveAlert) {
-                Alert(title: Text("Delete Stripe account?"), message: Text("This will remove your current Stripe account and you will have to connect a new one."), primaryButton: .destructive(Text("Delete"), action: {
+                Alert(title: Text("Deletar conta stripe?"), message: Text("Isso ira remover sua conta do stripe e voce tera que adicionar uma nova conta."), primaryButton: .destructive(Text("Delete"), action: {
                     viewModel.send(.userDeletsStripeAccount)
-                }), secondaryButton: .default(Text("Cancel")))
+                }), secondaryButton: .default(Text("Cancelar")))
             }
     }
     private var content: some View {
@@ -53,7 +53,7 @@ struct ConnectStripeRow: View {
 
             Spacer()
 
-            Text(state.stripePaymentsEnabled ? "Connected" : "Not connected")
+            Text(state.stripePaymentsEnabled ? "Conectado" : "Nao coneectado")
                 .foregroundColor(.secondary)
         }
     }

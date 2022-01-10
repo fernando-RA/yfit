@@ -74,20 +74,20 @@ struct TrainerClassFeedView: View {
         if viewModel.state.selectedSection == MyClassesSection.upcoming {
             return ActionSheet(title: Text(trainerClass.name), message: nil,
                                buttons: [
-                                .default(Text("Duplicate")) {
+                                .default(Text("Duplicar")) {
                                     viewModel.state.presentedForm = .duplicate(trainerClass)
                                 },
-                                .default(Text("Edit")) {
+                                .default(Text("Editar")) {
                                     viewModel.state.presentedForm = .edit(trainerClass)
                                 },
-                                .default(Text("View Attendees")) {
+                                .default(Text("Visualizar participantes")) {
                                     showSheet = true
                                     viewModel.fetchAttendeesGoing(trainer: trainerClass)
                                 },
-                                .default(Text("Share")) {
+                                .default(Text("Compartilhar")) {
                                     shareSheet(url: trainerClass.classLink ?? "")
                                 },
-                                .destructive(Text("Cancel class"), action: {
+                                .destructive(Text("Cancelar Aula"), action: {
                                     if trainerClass.clients >= 1 {
                                         viewModel.state.canceledClass = trainerClass
                                     } else {
@@ -101,13 +101,13 @@ struct TrainerClassFeedView: View {
         } else {
             return ActionSheet(title: Text(trainerClass.name), message: nil,
                                buttons: [
-                                .default(Text("Duplicate")) {
+                                .default(Text("Duplicar")) {
                                     viewModel.state.presentedForm = .duplicate(trainerClass)
                                 },
-                                .default(Text("Edit")) {
+                                .default(Text("Editar")) {
                                     viewModel.state.presentedForm = .edit(trainerClass)
                                 },
-                                .default(Text("View Attendees")) {
+                                .default(Text("Visualizar participantes")) {
                                     showSheet = true
                                     viewModel.fetchAttendeesGoing(trainer: trainerClass)
                                 },
@@ -144,12 +144,12 @@ struct TrainerClassFeedView: View {
     }
 
     private func cancelClassAlert(for trainerClass: TrainerClass) -> Alert {
-        return Alert(title: Text("Cancel your class?"),
-                     message: Text("We’ll let any attendees know via text and email. They will not be charged."),
-                     primaryButton: .default(Text("Never mind")) {
+        return Alert(title: Text("Cancelar sua aula??"),
+                     message: Text("Avisaremos todos os participantes por mensagem de texto e e-mail. Eles não serão cobrados."),
+                     primaryButton: .default(Text("Não, quero continuar minha aula")) {
                         hasClients = false
                      },
-                     secondaryButton: .destructive(Text("Yes, cancel"), action: {
+                     secondaryButton: .destructive(Text("Sim, cancelar"), action: {
                         viewModel.cancelClass(trainer: trainerClass)
                         viewModel.refreshFeed()
                      })
